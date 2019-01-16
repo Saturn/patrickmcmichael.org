@@ -3,6 +3,6 @@ title: Hello
 date: '2019-01-16'
 ---
 
-Hello, this is my first real blog post!
+Hello. This is just a placeholder and will be replaced when I write a "real" post.
 
 Goodbye.
