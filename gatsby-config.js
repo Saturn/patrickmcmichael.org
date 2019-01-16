@@ -8,6 +8,7 @@ module.exports = {
       github: `Saturn`,
     },
   },
+  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
