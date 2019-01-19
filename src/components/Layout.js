@@ -1,13 +1,13 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 
-import { rhythm, scale } from '../utils/typography'
+import { rhythm, scale } from '../utils/typography';
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    let header
+    const { location, title, children } = this.props;
+    const rootPath = `${__PATH_PREFIX__}/`;
+    let header;
 
     if (location.pathname === rootPath) {
       header = (
@@ -15,7 +15,7 @@ class Layout extends React.Component {
           style={{
             ...scale(1),
             marginBottom: rhythm(1.5),
-            marginTop: 0
+            marginTop: 0,
           }}
         >
           <Link
@@ -29,7 +29,7 @@ class Layout extends React.Component {
             {title}
           </Link>
         </h1>
-      )
+      );
     } else {
       header = (
         <h3
@@ -48,7 +48,7 @@ class Layout extends React.Component {
             {title}
           </Link>
         </h3>
-      )
+      );
     }
     return (
       <div
@@ -63,14 +63,14 @@ class Layout extends React.Component {
         {children}
         <footer
           style={{
-            marginTop: rhythm(2)
+            marginTop: rhythm(2),
           }}
         >
           © {new Date().getFullYear()} Patrick McMichael
         </footer>
       </div>
-    )
+    );
   }
 }
 
-export default Layout
+export default Layout;
