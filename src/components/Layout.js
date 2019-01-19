@@ -15,8 +15,7 @@ class Layout extends React.Component {
           style={{
             ...scale(1),
             marginBottom: rhythm(1.5),
-            marginTop: 0,
-            fontFamily: 'Merriweather, Georgia, serif'
+            marginTop: 0
           }}
         >
           <Link
