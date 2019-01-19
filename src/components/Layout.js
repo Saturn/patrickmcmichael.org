@@ -61,7 +61,11 @@ class Layout extends React.Component {
       >
         {header}
         {children}
-        <footer>
+        <footer
+          style={{
+            marginTop: rhythm(2)
+          }}
+        >
           © {new Date().getFullYear()} Patrick McMichael
         </footer>
       </div>
