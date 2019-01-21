@@ -46,7 +46,7 @@ For this example Flask application I will be using [Google](https://developers.g
 $ pip install flask flask-dance[sqla] flask-sqlalchemy blinker
 ```
 
-I am using [Flask-Dance]() because it is actively maintained, well documented and comes with quite a lot of built in providers.
+I am using [Flask-Dance](https://github.com/singingwolfboy/flask-dance) because it is actively maintained, well documented and comes with quite a lot of built in providers.
 
 ### The Code
 
