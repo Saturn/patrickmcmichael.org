@@ -2,6 +2,7 @@ import Typography from 'typography';
 import Judah from 'typography-theme-judah';
 
 Judah.bodyFontFamily = ['Georgia', 'serif'];
+Judah.headerFontFamily = ['Roboto', 'sans-serif'];
 
 const typography = new Typography(Judah);
 
