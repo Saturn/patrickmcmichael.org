@@ -1,6 +1,4 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import Image from 'gatsby-image';
 
 import { rhythm } from '../utils/typography';
 
@@ -14,11 +12,7 @@ class Bio extends React.Component {
         }}
       >
         <p>
-          Written by <strong>Patrick McMichael</strong>. Find me on{` `}
-          <a href={`https://github.com/Saturn`} target="_blank">
-            Github
-          </a>
-          .
+          By <strong>Patrick McMichael</strong>. Find me on <a href={`https://github.com/Saturn`} target="_blank">Github</a>.
         </p>
       </div>
     );
