@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Helmet from 'react-helmet';
 
 import { rhythm, scale } from '../utils/typography';
 
@@ -68,6 +69,9 @@ class Layout extends React.Component {
         >
           © {new Date().getFullYear()} Patrick McMichael
         </footer>
+        <Helmet>
+          <link rel="icon" href="/pcoloured.png" />
+        </Helmet>
       </div>
     );
   }
