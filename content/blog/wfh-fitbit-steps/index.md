@@ -56,7 +56,7 @@ fdata2019 = f.time_series(STEP_ACTIVITY, base_date=march2019, end_date=november2
 fdata2020 = f.time_series(STEP_ACTIVITY, base_date=march2020, end_date=november2020)["activities-steps"]
 ```
 
-I want to get the data in an easier form for me to work with so I create some simple helper functions.
+I want to get the data in an easier form for me to work with, so I create some simple helper functions.
 
 ```python
 def parse_datetime(date_string, fmt="%Y-%m-%d"):
@@ -79,7 +79,7 @@ def parse_fitbit_data(fitbit_data):
     return new_fitbit_data
 ```
 
-I can then parse the data returned by api and create a single Pandas DataFrame.
+I can then parse the data returned by the Fitbit API and create a single Pandas DataFrame.
 
 ```python
 data2019 = parse_fitbit_data(fdata2019)
@@ -163,9 +163,9 @@ plt.savefig('steps_2019vs2020_patrickmcmichael.png')
 
 This really shows the number of steps on weekdays dramatically increased. Why is this? I think the main reason is because as I have been temporarily working from home it means I no longer have to commute. My previous commute was driving 110+ miles per day so a large part of the day outside of work was spent sitting in a car. When I returned home in the evening, I normally felt pretty drained after the long car journey. It meant I didn't have the desire to be active rather I was more content with resting.
 
-Now when I finish work I still have plenty of energy and desire to exercise (go for walk, treadmill etc).
+Now when I finish work, I still have plenty of energy and desire to exercise (go for walk, treadmill etc).
 
-Interestingly, the number of steps has actually decreased for Saturday. I suggest this is because I get slightly more sleep on that day. And, unlike in 2019 I have no desire to "make up" for lack of exercise on the preceding week days.
+Interestingly, the number of steps has actually decreased for Saturday. I suggest this is because I get slightly more sleep on that day. And, unlike in 2019 I have no desire to "make up" for lack of exercise on the preceding weekdays.
 
 #### Steps Per Month
 
@@ -197,13 +197,13 @@ plt.savefig('steps2019vs2020months.png')
 
 ![Average Steps per Month in 2019 vs 2020](./steps2019vs2020months.png)
 
-Surprisingly, for April I did more steps for that month in 2019 than in 2020. So I did not neccesarrily increase the number of steps right away.
+Surprisingly, for April I did more steps for that month in 2019 than in 2020. So I did not necessarily increase the number of steps right away.
 
 ## Conclusion
 
 When I had to work from home due to Covid-19 I did consider not having the commute would benefit me hugely. [Long commutes make you fat, tired, and miserable (VOX, 2015)
 ](https://www.vox.com/2015/5/20/8629881/commuting-health-happiness) is an interesting article which shows the negative effects on people who have longer commutes.
 
-For me, the long commute was also not always bad. The journey to work forced me to wake up and "ease in" to the day rather than sit down at a desk straight away. I often listened to audiobooks or podcasts which passed the time. The journey home was less pleasant as it took longer and I was already tired from working for the previous seven or eight hours.
+For me, the long commute was also not always bad. The journey to work forced me to wake up and "ease in" to the day rather than sit down at a desk straight away. I often listened to audiobooks or podcasts which passed the time. The journey home was less pleasant as it took longer, and I was already tired from working for the previous seven or eight hours.
 
 You can look at the code I have used on this [GitHub Gist](https://gist.github.com/Saturn/d71778662f1018598fce47cc7112dcab).
