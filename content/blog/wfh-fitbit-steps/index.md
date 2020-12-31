@@ -196,7 +196,7 @@ plt.savefig('steps2019vs2020months.png')
 
 ![Average Steps per Month in 2019 vs 2020](./steps2019vs2020months.png)
 
-Surprisingly, for April I did more steps for that month in 2019 than in 2020. So I did not necessarily increase the number of steps right away.
+Surprisingly, for April I did more steps in 2019 than in 2020. So, I did not necessarily increase the number of steps right away.
 
 ## Conclusion
 
