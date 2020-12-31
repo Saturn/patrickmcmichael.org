@@ -70,7 +70,7 @@ class Layout extends React.Component {
           © {new Date().getFullYear()} Patrick McMichael
         </footer>
         <Helmet>
-          <link rel="icon" href="/pcoloured.png" />
+          <link rel="icon" href="/p.png" />
         </Helmet>
       </div>
     );
