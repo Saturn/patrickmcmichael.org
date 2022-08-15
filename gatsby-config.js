@@ -43,9 +43,9 @@ module.exports = {
           },
           `gatsby-remark-autolink-headers`,
           {
-            resolve: `gatsby-remark-prismjs`,
+            resolve: `gatsby-remark-highlight-code`,
             options: {
-              showLineNumbers: false
+              lineNumbers: true
             }
           },
           `gatsby-remark-copy-linked-files`,

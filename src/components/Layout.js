@@ -3,6 +3,8 @@ import { Link } from 'gatsby';
 import Helmet from 'react-helmet';
 
 import { rhythm, scale } from '../utils/typography';
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+deckDeckGoHighlightElement();
 
 class Layout extends React.Component {
   render() {
