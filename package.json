@@ -7,7 +7,7 @@
   "dependencies": {
     "@babel/compat-data": "^7.9.0",
     "@deckdeckgo/highlight-code": "^4.3.0",
-    "gatsby": "^2.27.4",
+    "gatsby": "^5.3.3",
     "gatsby-image": "^2.2.43",
     "gatsby-plugin-feed": "^2.3.28",
     "gatsby-plugin-google-analytics": "^2.1.37",
