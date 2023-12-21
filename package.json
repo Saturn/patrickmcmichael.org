@@ -8,10 +8,11 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
-    "@fontsource/merriweather": "^5.0.3",
     "@fontsource-variable/montserrat": "^5.0.4",
+    "@fontsource/merriweather": "^5.0.3",
     "gatsby": "^5.13.0",
     "gatsby-plugin-feed": "^5.13.0",
+    "gatsby-plugin-google-gtag": "^5.13.0",
     "gatsby-plugin-image": "^3.13.0",
     "gatsby-plugin-manifest": "^5.13.0",
     "gatsby-plugin-sharp": "^5.13.0",

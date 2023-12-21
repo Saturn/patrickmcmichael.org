@@ -122,5 +122,13 @@ module.exports = {
         icon: `src/images/p.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          'G-ZCF41VPMCS',
+        ]
+      }
+    }
   ],
 }
