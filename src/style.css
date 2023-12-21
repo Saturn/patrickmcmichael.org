@@ -332,7 +332,7 @@ a:focus {
 
 .social-links {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin-bottom: var(--spacing-8);
   flex-basis: 33%;
 
