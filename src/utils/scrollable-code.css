@@ -1,0 +1,4 @@
+pre[class*="language-"] {
+    max-height: 750px;
+    overflow-y: visible;
+}
