@@ -37,7 +37,7 @@ const Bio = () => {
         className="bio-avatar"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
-        src="../images/profile-pic.png"
+        src="../images/me.jpg"
         width={50}
         height={50}
         quality={95}
@@ -49,8 +49,8 @@ const Bio = () => {
         </p>
       )}
       <div className="social-links">
-        {social?.github && (<a target="_blank" href={`https://www.github.com/${social.github}`}>GitHub</a>)}
-        {social?.linkedin && (<a target="_blank" href={`https://www.linkedin.com/in/${social.linkedin}`}>LinkedIn</a>)}
+        {social?.github && (<a target="_blank" rel="noreferrer" href={`https://www.github.com/${social.github}`}>GitHub</a>)}
+        {social?.linkedin && (<a target="_blank" rel="noreferrer" href={`https://www.linkedin.com/in/${social.linkedin}`}>LinkedIn</a>)}
       </div>
     </div>
   )

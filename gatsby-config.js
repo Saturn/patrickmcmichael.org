@@ -53,6 +53,13 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          {
+            resolve: 'gatsby-remark-highlight-code',
+            options: {
+              terminal: 'carbon',
+              theme: 'dracula'
+            }
+          },
           `gatsby-remark-prismjs`,
         ],
       },
