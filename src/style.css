@@ -352,9 +352,16 @@ a:focus {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  flex-basis: 33%;
+  margin-left: auto;
 
   a {
     margin-right: var(--spacing-4);
+  }
+}
+
+@media (max-width: 36rem) {
+  .social-links {
+    flex-direction: column;
+    align-items: end;
   }
 }
