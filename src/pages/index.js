@@ -75,6 +75,16 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        description
+        siteUrl
+        social {
+          github
+          linkedin
+        }
+        author {
+          name
+          summary
+        }
       }
     }
     allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
