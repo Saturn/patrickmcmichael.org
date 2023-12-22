@@ -1,50 +1,57 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "patrickmcmichael.org",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "A personal blog and website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Patrick McMichael <patrick@patrickmcmichael.org>",
   "dependencies": {
-    "@fontsource-variable/montserrat": "^5.0.4",
-    "@fontsource/merriweather": "^5.0.3",
-    "gatsby": "^5.13.0",
-    "gatsby-plugin-feed": "^5.13.0",
-    "gatsby-plugin-google-gtag": "^5.13.0",
-    "gatsby-plugin-image": "^3.13.0",
-    "gatsby-plugin-manifest": "^5.13.0",
-    "gatsby-plugin-sharp": "^5.13.0",
-    "gatsby-remark-images": "^7.13.0",
-    "gatsby-remark-prismjs": "^7.13.0",
-    "gatsby-remark-responsive-iframe": "^6.13.0",
-    "gatsby-source-filesystem": "^5.13.0",
-    "gatsby-transformer-remark": "^6.13.0",
-    "gatsby-transformer-sharp": "^5.13.0",
-    "prismjs": "^1.29.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "@babel/compat-data": "^7.9.0",
+    "@deckdeckgo/highlight-code": "^4.3.0",
+    "gatsby": "^2.27.4",
+    "gatsby-image": "^2.2.43",
+    "gatsby-plugin-feed": "^2.3.28",
+    "gatsby-plugin-google-analytics": "^2.1.37",
+    "gatsby-plugin-manifest": "^2.2.47",
+    "gatsby-plugin-offline": "^2.2.10",
+    "gatsby-plugin-react-helmet": "^3.1.23",
+    "gatsby-plugin-sharp": "^2.6.36",
+    "gatsby-plugin-typography": "^2.3.24",
+    "gatsby-remark-autolink-headers": "^2.1.25",
+    "gatsby-remark-copy-linked-files": "^2.1.39",
+    "gatsby-remark-highlight-code": "^3.2.0",
+    "gatsby-remark-images": "^2.0.4",
+    "gatsby-remark-prismjs": "^3.3.35",
+    "gatsby-remark-responsive-iframe": "^2.2.33",
+    "gatsby-remark-smartypants": "^2.1.22",
+    "gatsby-source-filesystem": "^2.1.55",
+    "gatsby-telemetry": "^3.20.0",
+    "gatsby-transformer-remark": "^2.16.1",
+    "gatsby-transformer-sharp": "^2.3.18",
+    "gh-pages": "^2.2.0",
+    "prismjs": "^1.28.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-helmet": "^5.2.1",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19",
+    "typography-theme-judah": "^0.16.19"
   },
   "devDependencies": {
-    "prettier": "^2.8.8"
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.19.0",
+    "prettier": "^1.19.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "0BSD",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
+  "license": "MIT",
+  "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "start": "npm run develop",
+    "build": "gatsby build",
+    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   }
 }
