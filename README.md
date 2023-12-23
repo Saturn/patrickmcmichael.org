@@ -1,3 +1,3 @@
-![Build and Deploy](https://github.com/Saturn/patrickmcmichael.org/workflows/Build%20and%20Deploy/badge.svg?branch=master)
+[![Deploy Gatsby site to Pages](https://github.com/Saturn/patrickmcmichael.org/actions/workflows/gatsby.yml/badge.svg?branch=master)](https://github.com/Saturn/patrickmcmichael.org/actions/workflows/gatsby.yml)
 
 [patrickmcmichael.org](https://patrickmcmichael.org). This is my personal blog and website.
