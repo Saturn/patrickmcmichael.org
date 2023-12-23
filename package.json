@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "patrick-mcmichael-dot-org",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Personal blog and website for Patrick McMichael",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Patrick McMichael <patrick@patrickmcmichael.org>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/Saturn/patrickmcmichael.org"
   },
   "dependencies": {
     "@deckdeckgo/highlight-code": "^3.6.0",
@@ -18,12 +18,10 @@
     "gatsby-plugin-sharp": "^5.13.0",
     "gatsby-remark-highlight-code": "^3.3.0",
     "gatsby-remark-images": "^7.13.0",
-    "gatsby-remark-prismjs": "^7.13.0",
     "gatsby-remark-responsive-iframe": "^6.13.0",
     "gatsby-source-filesystem": "^5.13.0",
     "gatsby-transformer-remark": "^6.13.0",
     "gatsby-transformer-sharp": "^5.13.0",
-    "prismjs": "^1.29.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },

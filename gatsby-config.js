@@ -57,10 +57,10 @@ module.exports = {
             resolve: 'gatsby-remark-highlight-code',
             options: {
               terminal: 'carbon',
-              theme: 'dracula'
+              theme: 'dracula',
+              lineNumbers: false,
             }
           },
-          `gatsby-remark-prismjs`,
         ],
       },
     },
